@@ -12,10 +12,19 @@
 
 <body>
     <form action="answer.php" method="POST" class="d-flex flex-column m-auto align-items-center">
-        <textarea name="text" id="text" cols="30" rows="10" class="mt-3 w-50 p-3"></textarea>
-        <input type="text" name="badWord" class="my-3 w-auto py-2 text-center">
+        <textarea name="text" id="text" cols="30" rows="10" class="mt-3 w-50 p-3"
+            placeholder="Insert a text here"></textarea>
+        <input type="text" name="badWord" class="my-3 w-auto py-2 text-center" placeholder="Censorship">
         <button type="submit">Work on it!</button>
     </form>
+    <div class="w-75 m-auto mt-5 text-secondary text-decoration-underline fst-italic">Funziona con:
+        <ul>
+            <li>Textarea e censura presenti;</li>
+            <li>Textarea presente, prende una parola random dal testo per censura;</li>
+            <li>Campi vuoti, prende come testo un "lorem ipsum" da cui prende una parola random per censura;</li>
+
+        </ul>
+    </div>
 </body>
 
 </html>
